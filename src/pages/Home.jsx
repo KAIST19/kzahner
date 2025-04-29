@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import heroImage from '../assets/hero-image.png';
-import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiArrowRight } from 'react-icons/fi';
 
 export default function Home() {
   return (
@@ -67,31 +68,25 @@ export default function Home() {
           </motion.div>
         </div>
 
-        {/* Quick Stats */}
+        {/* Learn About Me Section */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="my-20"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="text-center max-w-3xl mx-auto my-24"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
-              <div className="text-[rgb(218,41,28)] text-4xl font-bold mb-2">KAIST</div>
-              <div className="text-gray-700 dark:text-gray-300">B.S. in Computing</div>
-            </div>
-            <div className="bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
-              <div className="text-[rgb(218,41,28)] text-4xl font-bold mb-2">2+</div>
-              <div className="text-gray-700 dark:text-gray-300">Research Projects</div>
-            </div>
-            <div className="bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
-              <div className="text-[rgb(218,41,28)] text-4xl font-bold mb-2">8.0/9.0</div>
-              <div className="text-gray-700 dark:text-gray-300">IELTS Score</div>
-            </div>
-            <div className="bg-gray-100/50 dark:bg-gray-800/50 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
-              <div className="text-[rgb(218,41,28)] text-4xl font-bold mb-2">URP</div>
-              <div className="text-gray-700 dark:text-gray-300">Research Award</div>
-            </div>
-          </div>
+          <h2 className="text-3xl font-bold mb-6">Learn About <span className="text-[rgb(218,41,28)]">Me</span></h2>
+          <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
+            Discover more about my background, research interests, and projects.
+          </p>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            className="bg-[rgb(218,41,28)] hover:bg-[rgb(198,31,18)] text-white px-8 py-4 rounded-lg font-medium inline-flex items-center gap-2"
+          >
+            <Link to="/about" className="flex items-center gap-2">
+              Learn About Me <FiArrowRight />
+            </Link>
+          </motion.button>
         </motion.div>
       </div>
     </div>

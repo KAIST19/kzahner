@@ -162,7 +162,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About <span className="text-[rgb(39,183,202)]">Me</span></h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About <span className="text-[rgb(218,41,28)]">Me</span></h1>
           <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
             Computer Science student at KAIST specializing in AI research and large language models.
           </p>
@@ -175,33 +175,33 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-16 bg-gray-100 dark:bg-gray-800/40 rounded-xl p-6 max-w-4xl mx-auto"
         >
-          <h2 className="text-2xl font-bold mb-6 text-[rgb(39,183,202)] text-center">Kanghyeon Zahner (김강현)</h2>
+          <h2 className="text-2xl font-bold mb-6 text-[rgb(218,41,28)] text-center">Kanghyeon Zahner (김강현)</h2>
           <p className="text-gray-700 dark:text-gray-300 mb-6 text-center">🇰🇷 South Korea citizen / 🇨🇭 Swiss B permit holder</p>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="flex items-center gap-3">
-              <div className="bg-[rgba(39,183,202,0.1)] p-3 rounded-full">
-                <FiPhone className="text-[rgb(39,183,202)]" />
+              <div className="bg-[rgba(218,41,28,0.1)] p-3 rounded-full">
+                <FiPhone className="text-[rgb(218,41,28)]" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Phone</p>
                 <p className="font-medium">+82 10 6614 5817</p>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-3">
-              <div className="bg-[rgba(39,183,202,0.1)] p-3 rounded-full">
-                <FiMail className="text-[rgb(39,183,202)]" />
+              <div className="bg-[rgba(218,41,28,0.1)] p-3 rounded-full">
+                <FiMail className="text-[rgb(218,41,28)]" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Email</p>
                 <p className="font-medium">kaist19@kaist.ac.kr</p>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-3">
-              <div className="bg-[rgba(39,183,202,0.1)] p-3 rounded-full">
-                <FiMapPin className="text-[rgb(39,183,202)]" />
+              <div className="bg-[rgba(218,41,28,0.1)] p-3 rounded-full">
+                <FiMapPin className="text-[rgb(218,41,28)]" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">Address</p>
@@ -221,7 +221,7 @@ const About = () => {
         >
           <div className="max-w-4xl mx-auto bg-gray-100 dark:bg-gray-800/40 rounded-xl p-6">
             <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">Education</h2>
-            
+
             <div className="mb-6">
               <div className="flex flex-col md:flex-row justify-between mb-2">
                 <h3 className="text-xl font-bold">Korea Advanced Institute of Science and Technology (KAIST)</h3>
@@ -247,7 +247,7 @@ const About = () => {
         >
           <div className="max-w-4xl mx-auto bg-gray-100 dark:bg-gray-800/40 rounded-xl p-6">
             <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">Experience</h2>
-            
+
             <div className="mb-10">
               <div className="flex flex-col md:flex-row justify-between mb-2">
                 <h3 className="text-xl font-bold">U&I Lab, KAIST</h3>
@@ -256,7 +256,7 @@ const About = () => {
                   <span>August 2023 – December 2024</span>
                 </div>
               </div>
-              <p className="text-[rgb(39,183,202)] mb-4">Undergraduate Researcher</p>
+              <p className="text-[rgb(218,41,28)] mb-4">Undergraduate Researcher</p>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
                 <li>Designed and implemented architectural modifications to large language models (LLMs) to improve efficiency and performance.</li>
                 <li>Led software prototyping and testing for two research projects:
@@ -269,7 +269,7 @@ const About = () => {
               </ul>
               <p className="text-gray-600 dark:text-gray-400 mt-4">Daejeon, South Korea</p>
             </div>
-            
+
             <div>
               <div className="flex flex-col md:flex-row justify-between mb-2">
                 <h3 className="text-xl font-bold">Republic of Korea Army</h3>
@@ -278,7 +278,7 @@ const About = () => {
                   <span>February 2021 – August 2022</span>
                 </div>
               </div>
-              <p className="text-[rgb(39,183,202)] mb-4">Sergeant</p>
+              <p className="text-[rgb(218,41,28)] mb-4">Sergeant</p>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
                 <li>Served as squad leader, overseeing and coordinating operations for a team of 8 soldiers.</li>
                 <li>Acted as assistant to the company commander, taking charge of drill preparation and logistics—contributing to the successful execution of multiple training exercises.</li>
@@ -299,12 +299,12 @@ const About = () => {
         >
           <div className="max-w-4xl mx-auto bg-gray-100 dark:bg-gray-800/40 rounded-xl p-6">
             <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">Awards</h2>
-            
+
             <div className="mb-6">
               <div className="flex flex-col md:flex-row justify-between mb-2">
                 <div className="flex items-start gap-3">
-                  <div className="bg-[rgba(39,183,202,0.1)] p-2 rounded-full mt-1">
-                    <FiAward className="text-[rgb(39,183,202)]" />
+                  <div className="bg-[rgba(218,41,28,0.1)] p-2 rounded-full mt-1">
+                    <FiAward className="text-[rgb(218,41,28)]" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold">2024 Winter/Spring Undergraduate Research Program (URP) Award</h3>
@@ -318,12 +318,12 @@ const About = () => {
               </div>
               <p className="text-gray-600 dark:text-gray-400 mt-4 ml-11">Daejeon, South Korea</p>
             </div>
-            
+
             <div>
               <div className="flex flex-col md:flex-row justify-between mb-2">
                 <div className="flex items-start gap-3">
-                  <div className="bg-[rgba(39,183,202,0.1)] p-2 rounded-full mt-1">
-                    <FiAward className="text-[rgb(39,183,202)]" />
+                  <div className="bg-[rgba(218,41,28,0.1)] p-2 rounded-full mt-1">
+                    <FiAward className="text-[rgb(218,41,28)]" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold">Dean's List</h3>
@@ -348,28 +348,28 @@ const About = () => {
         >
           <div className="max-w-4xl mx-auto bg-gray-100 dark:bg-gray-800/40 rounded-xl p-6">
             <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">Skills</h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-bold text-[rgb(39,183,202)] mb-4">Technical</h3>
+                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">Technical</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-2"><span className="font-medium">Programming Languages:</span> C, Python, Scala, F#, SQL</p>
                 <p className="text-gray-700 dark:text-gray-300"><span className="font-medium">Libraries & Tools:</span> PyTorch, Git, Hugging Face Transformers</p>
               </div>
-              
+
               <div>
-                <h3 className="text-xl font-bold text-[rgb(39,183,202)] mb-4">AI & Vision</h3>
+                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">AI & Vision</h3>
                 <p className="text-gray-700 dark:text-gray-300">Deep Learning, Computer Vision, Natural Language Processing, Model Optimization</p>
               </div>
-              
+
               <div>
-                <h3 className="text-xl font-bold text-[rgb(39,183,202)] mb-4">Language</h3>
+                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">Language</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-1"><span className="font-medium">Korean:</span> Native</p>
                 <p className="text-gray-700 dark:text-gray-300 mb-1"><span className="font-medium">English:</span> Full Professional (IELTS: 8.0/9.0)</p>
                 <p className="text-gray-700 dark:text-gray-300"><span className="font-medium">German & French:</span> Elementary</p>
               </div>
-              
+
               <div>
-                <h3 className="text-xl font-bold text-[rgb(39,183,202)] mb-4">Communication & Collaboration</h3>
+                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">Communication & Collaboration</h3>
                 <p className="text-gray-700 dark:text-gray-300">Leadership, Group Projects, Presentations, Meeting, and Technical Writing</p>
               </div>
             </div>

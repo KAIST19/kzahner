@@ -29,7 +29,7 @@ const Contact = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus('success');
-      
+
       // Reset form after submission
       setFormData({
         name: '',
@@ -54,7 +54,7 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in <span className="text-[rgb(39,183,202)]">Touch</span></h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in <span className="text-[rgb(218,41,28)]">Touch</span></h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Have a question or want to work together? I'd love to hear from you!
           </p>
@@ -70,11 +70,11 @@ const Contact = () => {
           >
             <div className="bg-gray-800/50 rounded-xl p-8 shadow-lg h-full">
               <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-[rgba(39,183,202,0.1)] p-3 rounded-lg">
-                    <FiMail className="text-[rgb(39,183,202)] text-xl" />
+                  <div className="bg-[rgba(218,41,28,0.1)] p-3 rounded-lg">
+                    <FiMail className="text-[rgb(218,41,28)] text-xl" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Email</h3>
@@ -82,10 +82,10 @@ const Contact = () => {
                     <p className="text-gray-400">jane.smith@stanford.edu</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
-                  <div className="bg-[rgba(39,183,202,0.1)] p-3 rounded-lg">
-                    <FiPhone className="text-[rgb(39,183,202)] text-xl" />
+                  <div className="bg-[rgba(218,41,28,0.1)] p-3 rounded-lg">
+                    <FiPhone className="text-[rgb(218,41,28)] text-xl" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Phone</h3>
@@ -93,10 +93,10 @@ const Contact = () => {
                     <p className="text-gray-400">Mon-Fri 9am-5pm PST</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
-                  <div className="bg-[rgba(39,183,202,0.1)] p-3 rounded-lg">
-                    <FiMapPin className="text-[rgb(39,183,202)] text-xl" />
+                  <div className="bg-[rgba(218,41,28,0.1)] p-3 rounded-lg">
+                    <FiMapPin className="text-[rgb(218,41,28)] text-xl" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Office</h3>
@@ -109,31 +109,31 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-10">
                 <h3 className="text-lg font-semibold mb-4">Connect With Me</h3>
                 <div className="flex gap-4">
-                  <a 
-                    href="https://linkedin.com" 
-                    target="_blank" 
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[rgba(39,183,202,0.1)] p-3 rounded-lg text-[rgb(39,183,202)] hover:bg-[rgba(39,183,202,0.2)] transition-colors"
+                    className="bg-[rgba(218,41,28,0.1)] p-3 rounded-lg text-[rgb(218,41,28)] hover:bg-[rgba(218,41,28,0.2)] transition-colors"
                   >
                     <FiLinkedin className="text-xl" />
                   </a>
-                  <a 
-                    href="https://github.com" 
-                    target="_blank" 
+                  <a
+                    href="https://github.com"
+                    target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[rgba(39,183,202,0.1)] p-3 rounded-lg text-[rgb(39,183,202)] hover:bg-[rgba(39,183,202,0.2)] transition-colors"
+                    className="bg-[rgba(218,41,28,0.1)] p-3 rounded-lg text-[rgb(218,41,28)] hover:bg-[rgba(218,41,28,0.2)] transition-colors"
                   >
                     <FiGithub className="text-xl" />
                   </a>
-                  <a 
-                    href="https://twitter.com" 
-                    target="_blank" 
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-[rgba(39,183,202,0.1)] p-3 rounded-lg text-[rgb(39,183,202)] hover:bg-[rgba(39,183,202,0.2)] transition-colors"
+                    className="bg-[rgba(218,41,28,0.1)] p-3 rounded-lg text-[rgb(218,41,28)] hover:bg-[rgba(218,41,28,0.2)] transition-colors"
                   >
                     <FiTwitter className="text-xl" />
                   </a>
@@ -141,7 +141,7 @@ const Contact = () => {
               </div>
             </div>
           </motion.div>
-          
+
           {/* Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
@@ -151,7 +151,7 @@ const Contact = () => {
           >
             <div className="bg-gray-800/50 rounded-xl p-8 shadow-lg">
               <h2 className="text-2xl font-bold mb-6">Send Me a Message</h2>
-              
+
               <form onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                   <div>
@@ -163,7 +163,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[rgb(39,183,202)] focus:border-transparent transition-colors"
+                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[rgb(218,41,28)] focus:border-transparent transition-colors"
                     />
                   </div>
                   <div>
@@ -175,11 +175,11 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[rgb(39,183,202)] focus:border-transparent transition-colors"
+                      className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[rgb(218,41,28)] focus:border-transparent transition-colors"
                     />
                   </div>
                 </div>
-                
+
                 <div className="mb-6">
                   <label htmlFor="subject" className="block text-gray-300 mb-2">Subject</label>
                   <input
@@ -189,10 +189,10 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[rgb(39,183,202)] focus:border-transparent transition-colors"
+                    className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[rgb(218,41,28)] focus:border-transparent transition-colors"
                   />
                 </div>
-                
+
                 <div className="mb-6">
                   <label htmlFor="message" className="block text-gray-300 mb-2">Message</label>
                   <textarea
@@ -202,23 +202,22 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[rgb(39,183,202)] focus:border-transparent transition-colors"
+                    className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[rgb(218,41,28)] focus:border-transparent transition-colors"
                   ></textarea>
                 </div>
-                
+
                 <div>
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`w-full md:w-auto px-8 py-3 rounded-lg font-medium transition-colors ${
-                      isSubmitting 
-                        ? 'bg-gray-700 cursor-not-allowed' 
-                        : 'bg-[rgb(39,183,202)] hover:bg-[rgb(29,153,172)]'
-                    }`}
+                    className={`w-full md:w-auto px-8 py-3 rounded-lg font-medium transition-colors ${isSubmitting
+                      ? 'bg-gray-700 cursor-not-allowed'
+                      : 'bg-[rgb(218,41,28)] hover:bg-[rgb(198,31,28)]'
+                      }`}
                   >
                     {isSubmitting ? 'Sending...' : 'Send Message'}
                   </button>
-                  
+
                   {submitStatus === 'success' && (
                     <motion.p
                       initial={{ opacity: 0, y: 10 }}
@@ -233,7 +232,7 @@ const Contact = () => {
             </div>
           </motion.div>
         </div>
-        
+
         {/* Map Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -254,7 +253,7 @@ const Contact = () => {
             ></iframe>
           </div>
         </motion.div>
-        
+
         {/* FAQ Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -263,12 +262,12 @@ const Contact = () => {
           className="mt-16"
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Frequently Asked <span className="text-[rgb(39,183,202)]">Questions</span></h2>
+            <h2 className="text-3xl font-bold mb-4">Frequently Asked <span className="text-[rgb(218,41,28)]">Questions</span></h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
               Find answers to common questions about collaboration, research opportunities, and more.
             </p>
           </div>
-          
+
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-gray-800/50 p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold mb-3">How can I collaborate on research?</h3>
@@ -276,21 +275,21 @@ const Contact = () => {
                 I'm always open to research collaborations that align with my areas of expertise. Please send me an email with a brief proposal outlining the research question and potential methods.
               </p>
             </div>
-            
+
             <div className="bg-gray-800/50 p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold mb-3">Do you accept PhD students?</h3>
               <p className="text-gray-400">
                 Yes, I typically accept 1-2 new PhD students each year. Prospective students should apply through Stanford's official application process and mention my name in their statement.
               </p>
             </div>
-            
+
             <div className="bg-gray-800/50 p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold mb-3">Are there opportunities for undergraduates?</h3>
               <p className="text-gray-400">
                 Yes, I regularly work with undergraduate students through research assistantships and independent study projects. Please contact me with your CV and a brief statement of interest.
               </p>
             </div>
-            
+
             <div className="bg-gray-800/50 p-6 rounded-xl shadow-lg">
               <h3 className="text-xl font-bold mb-3">Can you give a talk at my event?</h3>
               <p className="text-gray-400">

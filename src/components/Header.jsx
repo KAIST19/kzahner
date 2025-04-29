@@ -29,18 +29,17 @@ const Header = () => {
   ];
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-[rgb(15,15,15)]/90 backdrop-blur-md py-4 shadow-md' 
-          : 'bg-transparent py-6'
-      }`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? 'bg-[rgb(15,15,15)]/90 backdrop-blur-md py-4 shadow-md'
+        : 'bg-transparent py-6'
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <NavLink to="/" className="text-white text-2xl font-bold">
-            Dr.<span className="text-[rgb(39,183,202)]">Portfolio</span>
+            Dr.<span className="text-[rgb(218,41,28)]">Portfolio</span>
           </NavLink>
 
           {/* Desktop Navigation */}
@@ -50,17 +49,16 @@ const Header = () => {
                 key={link.path}
                 to={link.path}
                 className={({ isActive }) =>
-                  `text-lg transition-colors hover:text-[rgb(39,183,202)] ${
-                    isActive ? 'text-[rgb(39,183,202)]' : 'text-white'
+                  `text-lg transition-colors hover:text-[rgb(218,41,28)] ${isActive ? 'text-[rgb(218,41,28)]' : 'text-white'
                   }`
                 }
               >
                 {link.name}
               </NavLink>
             ))}
-            <a 
-              href="#" 
-              className="bg-[rgb(39,183,202)] hover:bg-[rgb(29,153,172)] text-white px-5 py-2 rounded-lg font-medium transition-colors"
+            <a
+              href="#"
+              className="bg-[rgb(218,41,28)] hover:bg-[rgb(198,31,18)] text-white px-5 py-2 rounded-lg font-medium transition-colors"
               onClick={(e) => {
                 e.preventDefault();
                 window.open('/resume.pdf', '_blank');
@@ -96,8 +94,7 @@ const Header = () => {
                   key={link.path}
                   to={link.path}
                   className={({ isActive }) =>
-                    `text-lg py-2 transition-colors hover:text-[rgb(39,183,202)] ${
-                      isActive ? 'text-[rgb(39,183,202)]' : 'text-white'
+                    `text-lg py-2 transition-colors hover:text-[rgb(218,41,28)] ${isActive ? 'text-[rgb(218,41,28)]' : 'text-white'
                     }`
                   }
                   onClick={() => setIsOpen(false)}
@@ -105,9 +102,9 @@ const Header = () => {
                   {link.name}
                 </NavLink>
               ))}
-              <a 
-                href="#" 
-                className="inline-block bg-[rgb(39,183,202)] hover:bg-[rgb(29,153,172)] text-white px-5 py-2 rounded-lg font-medium transition-colors"
+              <a
+                href="#"
+                className="inline-block bg-[rgb(218,41,28)] hover:bg-[rgb(198,31,18)] text-white px-5 py-2 rounded-lg font-medium transition-colors"
                 onClick={(e) => {
                   e.preventDefault();
                   window.open('/resume.pdf', '_blank');

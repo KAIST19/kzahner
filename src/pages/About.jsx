@@ -176,7 +176,7 @@ const About = () => {
           className="mb-16 bg-gray-100 dark:bg-gray-800/40 rounded-xl p-6 max-w-4xl mx-auto"
         >
           <h2 className="text-2xl font-bold mb-6 text-[rgb(218,41,28)] text-center">{t('fullName')}</h2>
-          <p className="text-gray-700 dark:text-gray-300 mb-6 text-center">🇰🇷 South Korea citizen / 🇨🇭 Swiss B permit holder</p>
+          <p className="text-gray-700 dark:text-gray-300 mb-6 text-center">{t('citizenInfo')}</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="flex items-center gap-3">
@@ -230,10 +230,10 @@ const About = () => {
                   <span>February 2019 – February 2025</span>
                 </div>
               </div>
-              <p className="text-gray-700 dark:text-gray-300 mb-2">B.S. in Computing</p>
-              <p className="text-gray-700 dark:text-gray-300 mb-1">Computer Science Major (AI Special Designated Major)</p>
-              <p className="text-gray-700 dark:text-gray-300">GPA: 3.81 / 4.30 (Swiss scale: 5.62 / 6.00)</p>
-              <p className="text-gray-600 dark:text-gray-400 mt-2">Daejeon, South Korea</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-2">{t('bsComputing')}</p>
+              <p className="text-gray-700 dark:text-gray-300 mb-1">{t('csMajor')}</p>
+              <p className="text-gray-700 dark:text-gray-300">{t('gpaInfo')}</p>
+              <p className="text-gray-600 dark:text-gray-400 mt-2">{t('daejeonKorea')}</p>
             </div>
           </div>
         </motion.div>
@@ -256,18 +256,18 @@ const About = () => {
                   <span>August 2023 – December 2024</span>
                 </div>
               </div>
-              <p className="text-[rgb(218,41,28)] mb-4">Undergraduate Researcher</p>
+              <p className="text-[rgb(218,41,28)] mb-4">{t('undergradResearcher')}</p>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-                <li>Designed and implemented architectural modifications to large language models (LLMs) to improve efficiency and performance.</li>
-                <li>Led software prototyping and testing for two research projects:
+                <li>{t('exp1Point1')}</li>
+                <li>{t('exp1Point2')}
                   <ul className="list-inside pl-5 mt-1 space-y-1 text-gray-600 dark:text-gray-400">
-                    <li>"Autocomplete Algorithm for Language Models"</li>
-                    <li>"FERT: Fixed Error Rate Training for Language Models"</li>
+                    <li>{t('exp1Project1')}</li>
+                    <li>{t('exp1Project2')}</li>
                   </ul>
                 </li>
-                <li>Strengthened scientific communication through weekly meetings, report writing, and collaborative discussions.</li>
+                <li>{t('exp1Point3')}</li>
               </ul>
-              <p className="text-gray-600 dark:text-gray-400 mt-4">Daejeon, South Korea</p>
+              <p className="text-gray-600 dark:text-gray-400 mt-4">{t('daejeonKorea')}</p>
             </div>
 
             <div>
@@ -278,14 +278,14 @@ const About = () => {
                   <span>February 2021 – August 2022</span>
                 </div>
               </div>
-              <p className="text-[rgb(218,41,28)] mb-4">Sergeant</p>
+              <p className="text-[rgb(218,41,28)] mb-4">{t('sergeant')}</p>
               <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-                <li>Served as squad leader, overseeing and coordinating operations for a team of 8 soldiers.</li>
-                <li>Acted as assistant to the company commander, taking charge of drill preparation and logistics—contributing to the successful execution of multiple training exercises.</li>
-                <li>Honed leadership, planning, and organizational skills in high-pressure, team-oriented environments.</li>
-                <li>Honorably discharged with the rank of Sergeant.</li>
+                <li>{t('exp2Point1')}</li>
+                <li>{t('exp2Point2')}</li>
+                <li>{t('exp2Point3')}</li>
+                <li>{t('exp2Point4')}</li>
               </ul>
-              <p className="text-gray-600 dark:text-gray-400 mt-4">Busan, South Korea</p>
+              <p className="text-gray-600 dark:text-gray-400 mt-4">{t('busanKorea')}</p>
             </div>
           </div>
         </motion.div>
@@ -307,8 +307,8 @@ const About = () => {
                     <FiAward className="text-[rgb(218,41,28)]" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">2024 Winter/Spring Undergraduate Research Program (URP) Award</h3>
-                    <p className="text-gray-700 dark:text-gray-300 mt-2">Awarded for excellence in undergraduate research titled "Autocomplete Algorithm for Language Models"</p>
+                    <h3 className="text-xl font-bold">{t('award1Title')}</h3>
+                    <p className="text-gray-700 dark:text-gray-300 mt-2">{t('award1Desc')}</p>
                   </div>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-400 whitespace-nowrap ml-11 md:ml-0">
@@ -316,7 +316,7 @@ const About = () => {
                   <span>September 2024</span>
                 </div>
               </div>
-              <p className="text-gray-600 dark:text-gray-400 mt-4 ml-11">Daejeon, South Korea</p>
+              <p className="text-gray-600 dark:text-gray-400 mt-4 ml-11">{t('daejeonKorea')}</p>
             </div>
 
             <div>
@@ -326,8 +326,8 @@ const About = () => {
                     <FiAward className="text-[rgb(218,41,28)]" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">Dean's List</h3>
-                    <p className="text-gray-700 dark:text-gray-300 mt-2">GPA in the top 2% of the entire freshman class at KAIST</p>
+                    <h3 className="text-xl font-bold">{t('award2Title')}</h3>
+                    <p className="text-gray-700 dark:text-gray-300 mt-2">{t('award2Desc')}</p>
                   </div>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-400 whitespace-nowrap ml-11 md:ml-0">
@@ -335,7 +335,7 @@ const About = () => {
                   <span>September 2019</span>
                 </div>
               </div>
-              <p className="text-gray-600 dark:text-gray-400 mt-4 ml-11">Daejeon, South Korea</p>
+              <p className="text-gray-600 dark:text-gray-400 mt-4 ml-11">{t('daejeonKorea')}</p>
             </div>
           </div>
         </motion.div>
@@ -358,19 +358,19 @@ const About = () => {
 
               <div>
                 <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">{t('aiVision')}</h3>
-                <p className="text-gray-700 dark:text-gray-300">Deep Learning, Computer Vision, Natural Language Processing, Model Optimization</p>
+                <p className="text-gray-700 dark:text-gray-300">{t('aiSkills')}</p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">{t('language')}</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-1"><span className="font-medium">Korean:</span> Native</p>
-                <p className="text-gray-700 dark:text-gray-300 mb-1"><span className="font-medium">English:</span> Full Professional (IELTS: 8.0/9.0)</p>
-                <p className="text-gray-700 dark:text-gray-300"><span className="font-medium">German & French:</span> Elementary</p>
+                <p className="text-gray-700 dark:text-gray-300 mb-1"><span className="font-medium">{t('koreanNative')}</span></p>
+                <p className="text-gray-700 dark:text-gray-300 mb-1"><span className="font-medium">{t('englishLevel')}</span></p>
+                <p className="text-gray-700 dark:text-gray-300"><span className="font-medium">{t('otherLanguages')}</span></p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">{t('communicationCollaboration')}</h3>
-                <p className="text-gray-700 dark:text-gray-300">Leadership, Group Projects, Presentations, Meeting, and Technical Writing</p>
+                <p className="text-gray-700 dark:text-gray-300">{t('communicationSkills')}</p>
               </div>
             </div>
           </div>

@@ -30,6 +30,39 @@ const translations = {
     programmingLanguages: "Programming Languages",
     librariesTools: "Libraries & Tools",
     fullName: "Kanghyeon Zahner",
+
+    // About page - detailed content
+    citizenInfo: "South Korea citizen / Swiss B permit holder",
+    bsComputing: "B.S. in Computing",
+    csMajor: "Computer Science Major (AI Special Designated Major)",
+    gpaInfo: "GPA: 3.81 / 4.30 (Swiss scale: 5.62 / 6.00)",
+    daejeonKorea: "Daejeon, South Korea",
+    busanKorea: "Busan, South Korea",
+    undergradResearcher: "Undergraduate Researcher",
+    sergeant: "Sergeant",
+    koreanNative: "Korean: Native",
+    englishLevel: "English: Full Professional (IELTS: 8.0/9.0)",
+    otherLanguages: "German & French: Elementary",
+    communicationSkills: "Leadership, Group Projects, Presentations, Meeting, and Technical Writing",
+    aiSkills: "Deep Learning, Computer Vision, Natural Language Processing, Model Optimization",
+
+    // Experience details
+    exp1Point1: "Designed and implemented architectural modifications to large language models (LLMs) to improve efficiency and performance.",
+    exp1Point2: "Led software prototyping and testing for two research projects:",
+    exp1Project1: "\"Autocomplete Algorithm for Language Models\"",
+    exp1Project2: "\"FERT: Fixed Error Rate Training for Language Models\"",
+    exp1Point3: "Strengthened scientific communication through weekly meetings, report writing, and collaborative discussions.",
+
+    exp2Point1: "Served as squad leader, overseeing and coordinating operations for a team of 8 soldiers.",
+    exp2Point2: "Acted as assistant to the company commander, taking charge of drill preparation and logistics—contributing to the successful execution of multiple training exercises.",
+    exp2Point3: "Honed leadership, planning, and organizational skills in high-pressure, team-oriented environments.",
+    exp2Point4: "Honorably discharged with the rank of Sergeant.",
+
+    // Awards details
+    award1Title: "2024 Winter/Spring Undergraduate Research Program (URP) Award",
+    award1Desc: "Awarded for excellence in undergraduate research titled \"Autocomplete Algorithm for Language Models\"",
+    award2Title: "Dean's List",
+    award2Desc: "GPA in the top 2% of the entire freshman class at KAIST"
   },
   de: {
     // Home page
@@ -56,6 +89,39 @@ const translations = {
     programmingLanguages: "Programmiersprachen",
     librariesTools: "Bibliotheken & Tools",
     fullName: "Kanghyeon Zahner",
+
+    // About page - detailed content
+    citizenInfo: "Südkoreanischer Staatsbürger / Schweizer B-Bewilligung",
+    bsComputing: "B.S. in Informatik",
+    csMajor: "Hauptfach Informatik (KI-Spezialisierung)",
+    gpaInfo: "GPA: 3.81 / 4.30 (Schweizer Skala: 5.62 / 6.00)",
+    daejeonKorea: "Daejeon, Südkorea",
+    busanKorea: "Busan, Südkorea",
+    undergradResearcher: "Undergraduate Forscher",
+    sergeant: "Feldwebel",
+    koreanNative: "Koreanisch: Muttersprache",
+    englishLevel: "Englisch: Professionell (IELTS: 8.0/9.0)",
+    otherLanguages: "Deutsch & Französisch: Grundkenntnisse",
+    communicationSkills: "Führung, Gruppenprojekte, Präsentationen, Meetings und technisches Schreiben",
+    aiSkills: "Deep Learning, Computer Vision, Natural Language Processing, Modelloptimierung",
+
+    // Experience details
+    exp1Point1: "Entwurf und Implementierung von Architekturmodifikationen für große Sprachmodelle (LLMs) zur Verbesserung von Effizienz und Leistung.",
+    exp1Point2: "Leitung von Softwareprototyping und Tests für zwei Forschungsprojekte:",
+    exp1Project1: "\"Autocomplete-Algorithmus für Sprachmodelle\"",
+    exp1Project2: "\"FERT: Fixed Error Rate Training für Sprachmodelle\"",
+    exp1Point3: "Stärkung der wissenschaftlichen Kommunikation durch wöchentliche Meetings, Berichtserstellung und kollaborative Diskussionen.",
+
+    exp2Point1: "Tätigkeit als Gruppenführer, Überwachung und Koordination der Operationen für ein Team von 8 Soldaten.",
+    exp2Point2: "Als Assistent des Kompaniechefs verantwortlich für Drill-Vorbereitung und Logistik—Beitrag zur erfolgreichen Durchführung mehrerer Trainingsübungen.",
+    exp2Point3: "Verbesserung von Führungs-, Planungs- und Organisationsfähigkeiten in Hochdruckumgebungen mit Teamorientierung.",
+    exp2Point4: "Ehrenhaft entlassen mit dem Rang eines Feldwebels.",
+
+    // Awards details
+    award1Title: "2024 Winter/Frühling Undergraduate Research Program (URP) Auszeichnung",
+    award1Desc: "Ausgezeichnet für hervorragende Undergraduate-Forschung mit dem Titel \"Autocomplete-Algorithmus für Sprachmodelle\"",
+    award2Title: "Dekansliste",
+    award2Desc: "GPA in den oberen 2% der gesamten Erstsemester-Klasse an der KAIST"
   },
   ko: {
     // Home page
@@ -82,6 +148,39 @@ const translations = {
     programmingLanguages: "프로그래밍 언어",
     librariesTools: "라이브러리 & 도구",
     fullName: "김강현",
+
+    // About page - detailed content
+    citizenInfo: "대한민국 국적 / 스위스 B 체류허가증 소지자",
+    bsComputing: "전산학 학사",
+    csMajor: "컴퓨터 과학 전공 (AI 특별 지정 전공)",
+    gpaInfo: "평점: 3.81 / 4.30 (스위스 척도: 5.62 / 6.00)",
+    daejeonKorea: "대한민국 대전",
+    busanKorea: "대한민국 부산",
+    undergradResearcher: "학부 연구원",
+    sergeant: "병장",
+    koreanNative: "한국어: 모국어",
+    englishLevel: "영어: 전문가 수준 (IELTS: 8.0/9.0)",
+    otherLanguages: "독일어 & 프랑스어: 기초 수준",
+    communicationSkills: "리더십, 그룹 프로젝트, 프레젠테이션, 회의 및 기술 문서 작성",
+    aiSkills: "딥 러닝, 컴퓨터 비전, 자연어 처리, 모델 최적화",
+
+    // Experience details
+    exp1Point1: "대형 언어 모델(LLM)의 효율성과 성능을 향상시키기 위한 아키텍처 수정을 설계하고 구현했습니다.",
+    exp1Point2: "두 개의 연구 프로젝트에 대한 소프트웨어 프로토타이핑 및 테스트를 주도했습니다:",
+    exp1Project1: "\"언어 모델을 위한 자동 완성 알고리즘\"",
+    exp1Project2: "\"FERT: 언어 모델을 위한 고정 오류율 훈련\"",
+    exp1Point3: "주간 회의, 보고서 작성 및 협업적 토론을 통해 과학적 의사소통 능력을 강화했습니다.",
+
+    exp2Point1: "분대장으로서 8명의 병사로 구성된 팀의 작전을 감독하고 조정했습니다.",
+    exp2Point2: "중대장의 보조로서 훈련 준비 및 물류를 담당하여 여러 훈련 연습의 성공적인 실행에 기여했습니다.",
+    exp2Point3: "고압적이고 팀 지향적인 환경에서 리더십, 계획 및 조직 기술을 향상시켰습니다.",
+    exp2Point4: "병장 계급으로 명예롭게 전역했습니다.",
+
+    // Awards details
+    award1Title: "2024 겨울/봄 학부생 연구 프로그램(URP) 상",
+    award1Desc: "\"언어 모델을 위한 자동 완성 알고리즘\"이라는 제목의 학부 연구 우수성으로 수상",
+    award2Title: "학장 리스트",
+    award2Desc: "KAIST 전체 1학년 중 상위 2%의 평점"
   }
 };
 

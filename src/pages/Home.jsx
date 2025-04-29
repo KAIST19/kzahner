@@ -20,7 +20,7 @@ export default function Home() {
             className="lg:w-1/2"
           >
             <h4 className="text-[rgb(218,41,28)] font-medium mb-2">{t('aiResearcher')}</h4>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Kanghyeon Zahner</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">{t('fullName')}</h1>
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
               {t('bio')}
             </p>

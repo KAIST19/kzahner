@@ -1,113 +1,109 @@
-# Vite React Tailwind Starter
-![Screenshots](https://i.imgur.com/vlZMdj3.png)
+# kzahner.com
 
+Personal website built with Vite, React, and Tailwind CSS.
 
-This is a [Vite](https://vitejs.dev/), [React](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/) project bootstrapped using vite-react-tailwind-starter created by [Theodorus Clarence](https://github.com/theodorusclarence/vite-react-tailwind-starter).
-- 💡 Instant Server Start
-- ⚡️ Lightning Fast HMR
-- 🛠️ Rich Features
-- 📦 Optimized Build
-- 🔩 Universal Plugin Interface
-- 🔑 Fully Typed APIs
+## Features
 
-See the deployment on [https://vite-react-tailwind-starter.theodorusclarence.com/](https://vite-react-tailwind-starter.theodorusclarence.com/)
+- Modern React application with Vite for fast development and builds
+- Responsive design with Tailwind CSS
+- Automatic deployment via GitHub Actions
+- Custom domain integration
 
+## Development
 
-## Installation
+### Prerequisites
 
-### Clone the template
+- Node.js (version 14 or later)
+- npm or yarn
 
-To clone this template you can use one of the three ways:
+### Getting Started
 
-
-#### 1. Use npx degit
+1. Clone the repository:
 ```bash
-npx degit https://github.com/theodorusclarence/vite-react-tailwind-starter my-app
+git clone https://github.com/KAIST19/kzahner.git
+cd kzahner
 ```
-replace `my-app` with your application name
 
-
-#### 2. Use this repository as a template
-
-![Use as template](https://i.imgur.com/I6aThUJ.png)
-
-
-#### 3. Deploy to vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fvite-react-tailwind-starter)
-
-
-### Running The Application
-First, install all the dependencies,
+2. Install dependencies:
 ```bash
-npm i
+npm install
 # or
 yarn
 ```
 
-Then, run the development server:
-
+3. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) to view the site in your browser.
 
-![Finished Build](https://i.imgur.com/c9P343j.png)
+## Building for Production
 
-You can start editing the page by modifying `pages/Home.jsx`. The page auto-updates as you edit the file.
+To create a production build:
 
-## What's Inside
-
-### Absolute import
-
-You can absolute import by using `@/`
-
-For example
-```jsx
-import UnstyledLink from '@/components/UnstyledLink'
-```
-You can also use auto import and it should work automatically.
-
-When you add a new folder in src, add it on the `jsconfig.json`
-```json
-{
-  "compilerOptions": {
-    "jsx": "preserve",
-    "baseUrl": "./src",
-    "paths": {
-      "@/components/*": ["./components/*"],
-      "@/pages/*": ["./pages/*"],
-      "@/routes/*": ["./routes/*"],
-      // add new folder here
-    },
-  },
-}
+```bash
+npm run build
+# or
+yarn build
 ```
 
-### Inter Fonts
+The production files will be generated in the `dist` folder.
 
-Inter fonts is self hosted. The default weights are `400, 600, 700`. To add more, use fontsquirrel.
+## Deployment
 
-### UnstyledLink Component
-Used as a component for Next.js Link. Will render out Next/Link if the href started with `/` or `#`, else will render an `a` tag with `target='_blank'`.
+This site is deployed to GitHub Pages with automatic deployment configured via GitHub Actions.
 
-### CustomLink Component
-An extension of UnstyledLink Component, you can add your default styling for a button/link.
-```jsx
-<UnstyledLink
-      className={`${props.className} inline-flex items-center font-bold hover:text-primary-400`}
-      {...props}
-/>
+### Manual Deployment
+
+You can manually deploy the site with:
+
+```bash
+npm run deploy
 ```
 
-### Default Favicon Declaration
-Use [Favicon Generator](https://www.favicon-generator.org/) and then overwrite the files in `/public/favicon`
+### Automatic Deployment
 
-### Just-In-Time Tailwindcss
-Defaulted to true, you can uncomment the `mode='jit'` in `/tailwind.config.js`
+Any push to the `main` branch will trigger the GitHub Actions workflow, which will:
+1. Build the site
+2. Deploy to GitHub Pages
+3. Configure the custom domain (kzahner.com)
 
-### Default Styles
-There are default styles for responsive heading sizes, and `.layout` to support a max-width for larger screen size.
+## Custom Domain Setup
+
+The site is configured to use kzahner.com as its custom domain. The necessary DNS configuration includes:
+
+1. A records pointing to GitHub Pages IP addresses:
+   - 185.199.108.153
+   - 185.199.109.153
+   - 185.199.110.153
+   - 185.199.111.153
+
+2. A TXT record for GitHub domain verification:
+   - Name: `_github-pages-challenge-KAIST19.kzahner.com`
+   - Value: [verification code provided by GitHub]
+
+## Project Structure
+
+```
+kzahner/
+├── .github/            # GitHub Actions workflows
+├── dist/               # Production build files
+├── public/             # Static files
+├── src/
+│   ├── assets/         # Images, fonts, etc.
+│   ├── components/     # React components
+│   ├── pages/          # Page components
+│   └── routes/         # Route configuration
+├── .gitignore
+├── index.html          # HTML template
+├── package.json        # Dependencies and scripts
+├── tailwind.config.js  # Tailwind CSS configuration
+└── vite.config.js      # Vite configuration
+```
+
+## License
+
+MIT

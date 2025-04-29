@@ -175,7 +175,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-16 bg-gray-100 dark:bg-gray-800/40 rounded-xl p-6 max-w-4xl mx-auto"
         >
-          <h2 className="text-2xl font-bold mb-6 text-[rgb(218,41,28)] text-center">Kanghyeon Zahner (김강현)</h2>
+          <h2 className="text-2xl font-bold mb-6 text-[rgb(218,41,28)] text-center">{t('fullName')}</h2>
           <p className="text-gray-700 dark:text-gray-300 mb-6 text-center">🇰🇷 South Korea citizen / 🇨🇭 Swiss B permit holder</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

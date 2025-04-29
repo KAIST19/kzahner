@@ -29,6 +29,7 @@ const translations = {
     communicationCollaboration: "Communication & Collaboration",
     programmingLanguages: "Programming Languages",
     librariesTools: "Libraries & Tools",
+    fullName: "Kanghyeon Zahner",
   },
   de: {
     // Home page
@@ -54,6 +55,7 @@ const translations = {
     communicationCollaboration: "Kommunikation & Zusammenarbeit",
     programmingLanguages: "Programmiersprachen",
     librariesTools: "Bibliotheken & Tools",
+    fullName: "Kanghyeon Zahner",
   },
   ko: {
     // Home page
@@ -79,6 +81,7 @@ const translations = {
     communicationCollaboration: "커뮤니케이션 & 협업",
     programmingLanguages: "프로그래밍 언어",
     librariesTools: "라이브러리 & 도구",
+    fullName: "김강현",
   }
 };
 

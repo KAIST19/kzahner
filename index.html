@@ -9,13 +9,15 @@
   <!-- Prevent flash of incorrect theme -->
   <script>
     // Immediately apply dark mode if saved or system preference
-    if (
-      localStorage.theme === 'dark' || 
-      (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
+    const isDark = localStorage.theme === 'dark' ||
+      (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
+    if (isDark) {
       document.documentElement.classList.add('dark');
+      document.documentElement.style.backgroundColor = 'rgb(15, 15, 15)';
     } else {
       document.documentElement.classList.remove('dark');
+      document.documentElement.style.backgroundColor = 'rgb(249, 250, 251)';
     }
   </script>
 

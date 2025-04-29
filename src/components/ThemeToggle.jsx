@@ -1,35 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
+import { useTheme } from '../contexts/ThemeContext';
 
 const ThemeToggle = () => {
-  const [darkMode, setDarkMode] = useState(() => {
-    // Check if user has a saved preference
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('theme');
-      // Check for saved theme or use system preference
-      return savedTheme === 'dark' || 
-        (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    }
-    return false;
-  });
-
-  // Apply theme whenever darkMode changes
-  useEffect(() => {
-    const root = window.document.documentElement;
-    
-    // Apply the theme change immediately
-    if (darkMode) {
-      root.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      root.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }, [darkMode]);
-
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-  };
+  const { darkMode, toggleTheme } = useTheme();
 
   return (
     <button

@@ -2,12 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Light mode defaults */
+html,
+body,
+#root {
+  background-color: rgb(249, 250, 251) !important;
+}
+
+/* Dark mode - be extremely aggressive */
+html.dark,
+html.dark body,
+html.dark #root,
+html.dark::before,
+html.dark::after,
+.dark::before,
+.dark::after {
+  background-color: rgb(15, 15, 15) !important;
+}
+
+/* Special fix for iOS overscroll */
+@media screen {
+  html.dark {
+    background-color: rgb(15, 15, 15) !important;
+  }
+
+  html.dark::before {
+    content: "";
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgb(15, 15, 15) !important;
+    z-index: -1000;
+  }
+
+  html.dark::after {
+    content: "";
+    position: fixed;
+    bottom: -100vh;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgb(15, 15, 15) !important;
+    z-index: -1000;
+  }
+}
+
 @layer base {
+
   /* Disable all transitions for instant theme switching */
   * {
     transition: none !important;
   }
-  
+
+  /* Fix background during overscroll - allow overscroll but maintain background */
+  html {
+    overscroll-behavior: auto;
+    /* Re-enable overscroll */
+  }
+
+  html,
+  body {
+    min-height: 100%;
+  }
+
+  /* Apply gradient only to main content container for visual appeal */
+  #root {
+    min-height: 100vh;
+    @apply bg-gradient-to-br from-lightbg-100 via-lightbg-200 to-lightbg-100 dark:from-darkbg-900 dark:via-darkbg-800 dark:to-darkbg-900;
+  }
+
+  body {
+    @apply text-sm font-primary md:text-base;
+  }
+
   /* inter-regular - latin */
   @font-face {
     font-family: 'Inter';
@@ -53,10 +122,6 @@
 
   h4 {
     @apply text-lg font-bold font-primary;
-  }
-
-  body {
-    @apply text-sm font-primary md:text-base;
   }
 
   .layout {

@@ -13,6 +13,22 @@ const translations = {
     me: "Me",
     discoverMore: "Discover more about my background, research interests, and projects.",
     learnAboutMeBtn: "Learn About Me",
+
+    // About page
+    aboutMe: "About Me",
+    education: "Education",
+    experience: "Experience",
+    awards: "Awards",
+    skills: "Skills",
+    phone: "Phone",
+    email: "Email",
+    address: "Address",
+    technical: "Technical",
+    aiVision: "AI & Vision",
+    language: "Language",
+    communicationCollaboration: "Communication & Collaboration",
+    programmingLanguages: "Programming Languages",
+    librariesTools: "Libraries & Tools",
   },
   de: {
     // Home page
@@ -22,6 +38,22 @@ const translations = {
     me: "mich",
     discoverMore: "Erfahren Sie mehr über meinen Hintergrund, Forschungsinteressen und Projekte.",
     learnAboutMeBtn: "Mehr über mich",
+
+    // About page
+    aboutMe: "Über Mich",
+    education: "Ausbildung",
+    experience: "Erfahrung",
+    awards: "Auszeichnungen",
+    skills: "Fähigkeiten",
+    phone: "Telefon",
+    email: "E-Mail",
+    address: "Adresse",
+    technical: "Technisch",
+    aiVision: "KI & Vision",
+    language: "Sprache",
+    communicationCollaboration: "Kommunikation & Zusammenarbeit",
+    programmingLanguages: "Programmiersprachen",
+    librariesTools: "Bibliotheken & Tools",
   },
   ko: {
     // Home page
@@ -31,6 +63,22 @@ const translations = {
     me: "더 알아보기",
     discoverMore: "제 배경, 연구 관심사 및 프로젝트에 대해 자세히 알아보세요.",
     learnAboutMeBtn: "나에 대해 더 알아보기",
+
+    // About page
+    aboutMe: "소개",
+    education: "학력",
+    experience: "경력",
+    awards: "수상 경력",
+    skills: "기술",
+    phone: "전화번호",
+    email: "이메일",
+    address: "주소",
+    technical: "기술적",
+    aiVision: "AI & 비전",
+    language: "언어",
+    communicationCollaboration: "커뮤니케이션 & 협업",
+    programmingLanguages: "프로그래밍 언어",
+    librariesTools: "라이브러리 & 도구",
   }
 };
 

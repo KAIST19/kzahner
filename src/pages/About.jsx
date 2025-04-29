@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiDownload, FiBookOpen, FiCode, FiLayers, FiServer, FiUsers, FiMail, FiPhone, FiMapPin, FiAward, FiCalendar } from 'react-icons/fi';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const skills = [
   {
@@ -153,6 +154,8 @@ const publications = [
 ];
 
 const About = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="bg-white dark:bg-[rgb(15,15,15)] text-gray-900 dark:text-white py-20">
       <div className="container mx-auto px-4">
@@ -162,10 +165,7 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About <span className="text-[rgb(218,41,28)]">Me</span></h1>
-          <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto">
-            Computer Science student at KAIST specializing in AI research and large language models.
-          </p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('aboutMe')}</h1>
         </motion.div>
 
         {/* Contact Information */}
@@ -184,7 +184,7 @@ const About = () => {
                 <FiPhone className="text-[rgb(218,41,28)]" />
               </div>
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Phone</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">{t('phone')}</p>
                 <p className="font-medium">+82 10 6614 5817</p>
               </div>
             </div>
@@ -194,7 +194,7 @@ const About = () => {
                 <FiMail className="text-[rgb(218,41,28)]" />
               </div>
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Email</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">{t('email')}</p>
                 <p className="font-medium">kaist19@kaist.ac.kr</p>
               </div>
             </div>
@@ -204,7 +204,7 @@ const About = () => {
                 <FiMapPin className="text-[rgb(218,41,28)]" />
               </div>
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Address</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">{t('address')}</p>
                 <p className="font-medium">48 Sonnhaldenstrasse</p>
                 <p className="font-medium">Kaltbrunn, SG 8722</p>
               </div>
@@ -220,7 +220,7 @@ const About = () => {
           className="mb-16"
         >
           <div className="max-w-4xl mx-auto bg-gray-100 dark:bg-gray-800/40 rounded-xl p-6">
-            <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">Education</h2>
+            <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">{t('education')}</h2>
 
             <div className="mb-6">
               <div className="flex flex-col md:flex-row justify-between mb-2">
@@ -246,7 +246,7 @@ const About = () => {
           className="mb-16"
         >
           <div className="max-w-4xl mx-auto bg-gray-100 dark:bg-gray-800/40 rounded-xl p-6">
-            <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">Experience</h2>
+            <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">{t('experience')}</h2>
 
             <div className="mb-10">
               <div className="flex flex-col md:flex-row justify-between mb-2">
@@ -298,7 +298,7 @@ const About = () => {
           className="mb-16"
         >
           <div className="max-w-4xl mx-auto bg-gray-100 dark:bg-gray-800/40 rounded-xl p-6">
-            <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">Awards</h2>
+            <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">{t('awards')}</h2>
 
             <div className="mb-6">
               <div className="flex flex-col md:flex-row justify-between mb-2">
@@ -347,29 +347,29 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <div className="max-w-4xl mx-auto bg-gray-100 dark:bg-gray-800/40 rounded-xl p-6">
-            <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">Skills</h2>
+            <h2 className="text-2xl font-bold mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">{t('skills')}</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">Technical</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-2"><span className="font-medium">Programming Languages:</span> C, Python, Scala, F#, SQL</p>
-                <p className="text-gray-700 dark:text-gray-300"><span className="font-medium">Libraries & Tools:</span> PyTorch, Git, Hugging Face Transformers</p>
+                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">{t('technical')}</h3>
+                <p className="text-gray-700 dark:text-gray-300 mb-2"><span className="font-medium">{t('programmingLanguages')}:</span> C, Python, Scala, F#, SQL</p>
+                <p className="text-gray-700 dark:text-gray-300"><span className="font-medium">{t('librariesTools')}:</span> PyTorch, Git, Hugging Face Transformers</p>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">AI & Vision</h3>
+                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">{t('aiVision')}</h3>
                 <p className="text-gray-700 dark:text-gray-300">Deep Learning, Computer Vision, Natural Language Processing, Model Optimization</p>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">Language</h3>
+                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">{t('language')}</h3>
                 <p className="text-gray-700 dark:text-gray-300 mb-1"><span className="font-medium">Korean:</span> Native</p>
                 <p className="text-gray-700 dark:text-gray-300 mb-1"><span className="font-medium">English:</span> Full Professional (IELTS: 8.0/9.0)</p>
                 <p className="text-gray-700 dark:text-gray-300"><span className="font-medium">German & French:</span> Elementary</p>
               </div>
 
               <div>
-                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">Communication & Collaboration</h3>
+                <h3 className="text-xl font-bold text-[rgb(218,41,28)] mb-4">{t('communicationCollaboration')}</h3>
                 <p className="text-gray-700 dark:text-gray-300">Leadership, Group Projects, Presentations, Meeting, and Technical Writing</p>
               </div>
             </div>

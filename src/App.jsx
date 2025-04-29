@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
 import AppRoutes from '@/routes/Routes';
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 export default function App() {
   // Initialize theme based on saved preference
   useEffect(() => {
     // Check for stored theme or use system preference
     const savedTheme = localStorage.getItem('theme');
-    
+
     if (
-      savedTheme === 'dark' || 
+      savedTheme === 'dark' ||
       (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)
     ) {
       document.documentElement.classList.add('dark');
@@ -19,8 +20,10 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-lightbg-100 via-lightbg-200 to-lightbg-100 dark:from-darkbg-900 dark:via-darkbg-800 dark:to-darkbg-900">
-      <AppRoutes />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-gradient-to-br from-lightbg-100 via-lightbg-200 to-lightbg-100 dark:from-darkbg-900 dark:via-darkbg-800 dark:to-darkbg-900">
+        <AppRoutes />
+      </div>
+    </LanguageProvider>
   );
 }

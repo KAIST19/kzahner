@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import heroImage from '../assets/hero-image.png';
 import { FiGithub, FiLinkedin, FiMail, FiArrowRight } from 'react-icons/fi';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Home() {
+  const { t } = useLanguage();
+
   return (
     <div className="bg-white dark:bg-[rgb(15,15,15)] text-gray-900 dark:text-white min-h-screen transition-colors duration-200">
       <div className="container mx-auto px-4 py-20">
@@ -16,10 +19,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="lg:w-1/2"
           >
-            <h4 className="text-[rgb(218,41,28)] font-medium mb-2">AI Researcher & Computer Science Student</h4>
+            <h4 className="text-[rgb(218,41,28)] font-medium mb-2">{t('aiResearcher')}</h4>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Kanghyeon Zahner</h1>
             <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-              I hold a B.S. in Computer Science from KAIST, where I conducted research on the training & text generation of LLMs. Now based in Switzerland.
+              {t('bio')}
             </p>
 
             <div className="flex gap-5 mb-8">
@@ -75,16 +78,16 @@ export default function Home() {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="text-center max-w-3xl mx-auto my-24"
         >
-          <h2 className="text-3xl font-bold mb-6">Learn About <span className="text-[rgb(218,41,28)]">Me</span></h2>
+          <h2 className="text-3xl font-bold mb-6">{t('learnAbout')} <span className="text-[rgb(218,41,28)]">{t('me')}</span></h2>
           <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
-            Discover more about my background, research interests, and projects.
+            {t('discoverMore')}
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
             className="bg-[rgb(218,41,28)] hover:bg-[rgb(198,31,18)] text-white px-8 py-4 rounded-lg font-medium inline-flex items-center gap-2"
           >
             <Link to="/about" className="flex items-center gap-2">
-              Learn About Me <FiArrowRight />
+              {t('learnAboutMeBtn')} <FiArrowRight />
             </Link>
           </motion.button>
         </motion.div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
+import LanguageToggle from './LanguageToggle';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,11 +39,13 @@ export default function Navbar() {
             >
               About
             </Link>
+            <LanguageToggle />
             <ThemeToggle />
           </div>
 
           {/* Mobile menu button and theme toggle */}
           <div className="md:hidden flex items-center space-x-2">
+            <LanguageToggle />
             <ThemeToggle />
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}

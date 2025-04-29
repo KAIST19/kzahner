@@ -53,4 +53,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          cname: kzahner.com 
+          cname: kzahner.com
+          force_orphan: true 

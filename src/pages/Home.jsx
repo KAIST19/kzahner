@@ -1,10 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaGithub, FaTwitter, FaLinkedin, FaArrowRight } from 'react-icons/fa';
-import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import heroImage from '../assets/hero-image.png';
-import { FiArrowRight, FiGithub, FiLinkedin, FiTwitter, FiMail } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 
 export default function Home() {
   return (
@@ -24,42 +21,24 @@ export default function Home() {
               I hold a B.S. in Computer Science from KAIST, where I conducted research on the training & text generation of LLMs. Now based in Switzerland.
             </p>
 
-            <div className="flex flex-wrap gap-4 mb-10">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                className="bg-[rgb(218,41,28)] hover:bg-[rgb(198,31,18)] text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2"
-              >
-                <Link to="/contact" className="flex items-center gap-2">
-                  Get in Touch <FiArrowRight />
-                </Link>
-              </motion.button>
-            </div>
-
-            <div className="flex gap-5">
+            <div className="flex gap-5 mb-8">
               <motion.a
-                href="https://github.com"
+                href="https://www.linkedin.com/in/kanghyeon-zahner-29ba44192/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -5, color: "rgb(218,41,28)" }}
-                className="text-gray-600 dark:text-gray-400 hover:text-[rgb(218,41,28)] dark:hover:text-white transition-colors text-2xl"
+                className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[rgb(218,41,28)] dark:hover:text-white transition-colors"
               >
-                <FiGithub />
-              </motion.a>
-              <motion.a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -5, color: "rgb(218,41,28)" }}
-                className="text-gray-600 dark:text-gray-400 hover:text-[rgb(218,41,28)] dark:hover:text-white transition-colors text-2xl"
-              >
-                <FiLinkedin />
+                <FiLinkedin className="text-2xl" />
+                <span>LinkedIn</span>
               </motion.a>
               <motion.a
                 href="mailto:kaist19@kaist.ac.kr"
                 whileHover={{ y: -5, color: "rgb(218,41,28)" }}
-                className="text-gray-600 dark:text-gray-400 hover:text-[rgb(218,41,28)] dark:hover:text-white transition-colors text-2xl"
+                className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[rgb(218,41,28)] dark:hover:text-white transition-colors"
               >
-                <FiMail />
+                <FiMail className="text-2xl" />
+                <span>kaist19@kaist.ac.kr</span>
               </motion.a>
             </div>
           </motion.div>
@@ -113,27 +92,6 @@ export default function Home() {
               <div className="text-gray-700 dark:text-gray-300">Research Award</div>
             </div>
           </div>
-        </motion.div>
-
-        {/* Call to Action */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          className="text-center max-w-3xl mx-auto my-24"
-        >
-          <h2 className="text-3xl font-bold mb-6">Interested in <span className="text-[rgb(218,41,28)]">AI research</span> or collaboration?</h2>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
-            Let's connect!
-          </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            className="bg-[rgb(218,41,28)] hover:bg-[rgb(198,31,18)] text-white px-8 py-4 rounded-lg font-medium inline-flex items-center gap-2"
-          >
-            <Link to="/contact" className="flex items-center gap-2">
-              Get in Touch <FiArrowRight />
-            </Link>
-          </motion.button>
         </motion.div>
       </div>
     </div>

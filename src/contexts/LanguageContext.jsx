@@ -153,7 +153,7 @@ const translations = {
     citizenInfo: "대한민국 국적 / 스위스 B 체류허가증 소지자",
     bsComputing: "전산학 학사",
     csMajor: "컴퓨터 과학 전공 (AI 특별 지정 전공)",
-    gpaInfo: "평점: 3.81 / 4.30 (스위스 척도: 5.62 / 6.00)",
+    gpaInfo: "GPA: 3.81 / 4.30 (스위스 GPA 기준 5.62 / 6.00)",
     daejeonKorea: "대한민국 대전",
     busanKorea: "대한민국 부산",
     undergradResearcher: "학부 연구원",
@@ -167,18 +167,18 @@ const translations = {
     // Experience details
     exp1Point1: "대형 언어 모델(LLM)의 효율성과 성능을 향상시키기 위한 아키텍처 수정을 설계하고 구현했습니다.",
     exp1Point2: "두 개의 연구 프로젝트에 대한 소프트웨어 프로토타이핑 및 테스트를 주도했습니다:",
-    exp1Project1: "\"언어 모델을 위한 자동 완성 알고리즘\"",
-    exp1Project2: "\"FERT: 언어 모델을 위한 고정 오류율 훈련\"",
+    exp1Project1: "\"Autocomplete Algorithm for Language Models\"",
+    exp1Project2: "\"FERT: Fixed Error Rate Training for Language Models\"",
     exp1Point3: "주간 회의, 보고서 작성 및 협업적 토론을 통해 과학적 의사소통 능력을 강화했습니다.",
 
-    exp2Point1: "분대장으로서 8명의 병사로 구성된 팀의 작전을 감독하고 조정했습니다.",
-    exp2Point2: "중대장의 보조로서 훈련 준비 및 물류를 담당하여 여러 훈련 연습의 성공적인 실행에 기여했습니다.",
+    exp2Point1: "분대장으로서 8명의 병사로 구성된 분대를 이끌었습니다.",
+    exp2Point2: "중대장의 행정병으로서 훈련 준비 및 물류를 담당하여 성공적인 훈련에 기여했습니다.",
     exp2Point3: "고압적이고 팀 지향적인 환경에서 리더십, 계획 및 조직 기술을 향상시켰습니다.",
     exp2Point4: "병장 계급으로 명예롭게 전역했습니다.",
 
     // Awards details
     award1Title: "2024 겨울/봄 학부생 연구 프로그램(URP) 상",
-    award1Desc: "\"언어 모델을 위한 자동 완성 알고리즘\"이라는 제목의 학부 연구 우수성으로 수상",
+    award1Desc: "\"Autocomplete Algorithm for Language Models\"이라는 제목의 학부 연구 우수성으로 수상",
     award2Title: "학장 리스트",
     award2Desc: "KAIST 전체 1학년 중 상위 2%의 평점"
   }

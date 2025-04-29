@@ -6,7 +6,8 @@
     "build": "vite build",
     "serve": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "release": "npm version patch && git push --follow-tags"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.10",

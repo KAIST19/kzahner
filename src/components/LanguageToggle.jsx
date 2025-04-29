@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const LanguageToggle = () => {
   const languages = [
@@ -7,29 +8,7 @@ const LanguageToggle = () => {
     { code: 'ko', label: 'KO', fullName: '한국어' }
   ];
 
-  const [currentLang, setCurrentLang] = useState(() => {
-    // Check if user has a saved preference
-    if (typeof window !== 'undefined') {
-      const savedLang = localStorage.getItem('language');
-      // Return saved language or default to English
-      return savedLang || 'en';
-    }
-    return 'en';
-  });
-
-  // Apply language whenever it changes
-  useEffect(() => {
-    // Apply the language change immediately
-    document.documentElement.setAttribute('lang', currentLang);
-    localStorage.setItem('language', currentLang);
-
-    // Here you could load different translations based on language
-    // For now, we'll just save the preference
-  }, [currentLang]);
-
-  const changeLanguage = (langCode) => {
-    setCurrentLang(langCode);
-  };
+  const { language, changeLanguage } = useLanguage();
 
   return (
     <div className="flex items-center space-x-1 px-1 py-1 rounded-md bg-gray-200 dark:bg-gray-800">
@@ -37,7 +16,7 @@ const LanguageToggle = () => {
         <button
           key={lang.code}
           onClick={() => changeLanguage(lang.code)}
-          className={`text-xs px-2 py-1 rounded-md focus:outline-none ${currentLang === lang.code
+          className={`text-xs px-2 py-1 rounded-md focus:outline-none ${language === lang.code
             ? 'bg-[rgb(218,41,28)] text-white font-bold'
             : 'text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700'
             }`}

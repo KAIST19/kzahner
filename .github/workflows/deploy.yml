@@ -4,12 +4,20 @@ on:
   push:
     branches:
       - main  # Set this to your default branch
+  # Allow manual triggering
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
       
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -23,10 +31,25 @@ jobs:
       - name: Build
         run: npm run build
         
+      - name: Configure Git
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+        
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           cname: kzahner.com
-          force_orphan: true 
+          force_orphan: true
+          commit_message: "Deploy website - ${{ github.event.head_commit.message }}"
+      
+      # This step helps ensure GitHub processes the change and triggers the pages build
+      - name: Wait for pages build
+        run: sleep 60
+      
+      - name: Verify deployment
+        run: |
+          echo "Deployment completed! GitHub Pages should now be building."
+          echo "If your site doesn't update within a few minutes, check the 'Actions' tab in your repository." 

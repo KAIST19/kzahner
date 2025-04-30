@@ -62,7 +62,10 @@ const translations = {
     award1Title: "2024 Winter/Spring Undergraduate Research Program (URP) Award",
     award1Desc: "Awarded for excellence in undergraduate research titled \"Autocomplete Algorithm for Language Models\"",
     award2Title: "Dean's List",
-    award2Desc: "GPA in the top 2% of the entire freshman class at KAIST"
+    award2Desc: "GPA in the top 2% of the entire freshman class at KAIST",
+
+    // Name explanation
+    nameExplanation: "Note: As a Korean citizen, my legal name is 김강현 (Kanghyeon Kim, as shown on my passport). In Switzerland, I am registered under the name Kanghyeon Zahner."
   },
   de: {
     // Home page
@@ -121,16 +124,19 @@ const translations = {
     award1Title: "2024 Winter/Frühling Undergraduate Research Program (URP) Auszeichnung",
     award1Desc: "Ausgezeichnet für hervorragende Undergraduate-Forschung mit dem Titel \"Autocomplete-Algorithmus für Sprachmodelle\"",
     award2Title: "Dekansliste",
-    award2Desc: "GPA in den oberen 2% der gesamten Erstsemester-Klasse an der KAIST"
+    award2Desc: "GPA in den oberen 2% der gesamten Erstsemester-Klasse an der KAIST",
+
+    // Name explanation
+    nameExplanation: "Hinweis: Als südkoreanischer Staatsbürger ist mein offizieller Name 김강현 (Kanghyeon Kim, wie in meinem Pass angegeben). In der Schweiz bin ich unter dem Namen Kanghyeon Zahner registriert."
   },
   ko: {
     // Home page
     aiResearcher: "인공지능, 수학",
     bio: "2025년에 전산학 학사 학위를 받았으며, 대형 언어 모델(LLM)의 학습 및 텍스트 생성에 관한 연구를 수행했습니다. 현재 스위스에 거주 중입니다.",
-    learnAbout: "나에 대해",
-    me: "더 알아보기",
+    learnAbout: "더",
+    me: "알아보기",
     discoverMore: "제 배경, 연구 관심사 및 프로젝트에 대해 자세히 알아보세요.",
-    learnAboutMeBtn: "나에 대해 더 알아보기",
+    learnAboutMeBtn: "About",
 
     // About page
     aboutMe: "소개",
@@ -180,7 +186,10 @@ const translations = {
     award1Title: "2024 겨울/봄 학부생 연구 프로그램(URP) 상",
     award1Desc: "\"Autocomplete Algorithm for Language Models\" 학부 연구상 수상",
     award2Title: "Dean's List",
-    award2Desc: "KAIST 전체 1학년 중 상위 2%의 평점"
+    award2Desc: "KAIST 전체 1학년 중 상위 2%의 평점",
+
+    // Name explanation
+    nameExplanation: "참고: 대한민국 국적으로 법적 이름은 김강현(여권상 Kanghyeon Kim)입니다. 스위스에서는 Kanghyeon Zahner로 등록되어 있습니다."
   }
 };
 

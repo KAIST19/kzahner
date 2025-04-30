@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiDownload, FiBookOpen, FiCode, FiLayers, FiServer, FiUsers, FiMail, FiPhone, FiMapPin, FiAward, FiCalendar } from 'react-icons/fi';
+import { FiDownload, FiBookOpen, FiCode, FiLayers, FiServer, FiUsers, FiMail, FiPhone, FiMapPin, FiAward, FiCalendar, FiLinkedin } from 'react-icons/fi';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const skills = [
@@ -181,16 +181,6 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="flex items-center gap-3">
               <div className="bg-[rgba(218,41,28,0.1)] p-3 rounded-full">
-                <FiPhone className="text-[rgb(218,41,28)]" />
-              </div>
-              <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{t('phone')}</p>
-                <p className="font-medium">+82 10 6614 5817</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3">
-              <div className="bg-[rgba(218,41,28,0.1)] p-3 rounded-full">
                 <FiMail className="text-[rgb(218,41,28)]" />
               </div>
               <div>
@@ -201,12 +191,28 @@ const About = () => {
 
             <div className="flex items-center gap-3">
               <div className="bg-[rgba(218,41,28,0.1)] p-3 rounded-full">
+                <FiLinkedin className="text-[rgb(218,41,28)]" />
+              </div>
+              <div>
+                <p className="text-sm text-gray-500 dark:text-gray-400">LinkedIn</p>
+                <a
+                  href="https://www.linkedin.com/in/kanghyeon-zahner-29ba44192/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium hover:text-[rgb(218,41,28)] transition-colors"
+                >
+                  Kanghyeon Zahner
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <div className="bg-[rgba(218,41,28,0.1)] p-3 rounded-full">
                 <FiMapPin className="text-[rgb(218,41,28)]" />
               </div>
               <div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">{t('address')}</p>
-                <p className="font-medium">48 Sonnhaldenstrasse</p>
-                <p className="font-medium">Kaltbrunn, SG 8722</p>
+                <p className="font-medium">Kaltbrunn, Switzerland</p>
               </div>
             </div>
           </div>
@@ -261,8 +267,28 @@ const About = () => {
                 <li>{t('exp1Point1')}</li>
                 <li>{t('exp1Point2')}
                   <ul className="list-inside pl-5 mt-1 space-y-1 text-gray-600 dark:text-gray-400">
-                    <li>{t('exp1Project1')}</li>
-                    <li>{t('exp1Project2')}</li>
+                    <li>
+                      {t('exp1Project1')}
+                      <a
+                        href="/documents/AAfLM.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-2 text-[rgb(218,41,28)] hover:underline"
+                      >
+                        [PDF]
+                      </a>
+                    </li>
+                    <li>
+                      {t('exp1Project2')}
+                      <a
+                        href="/documents/FERT.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ml-2 text-[rgb(218,41,28)] hover:underline"
+                      >
+                        [PDF]
+                      </a>
+                    </li>
                   </ul>
                 </li>
                 <li>{t('exp1Point3')}</li>

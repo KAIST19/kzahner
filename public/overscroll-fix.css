@@ -1,30 +1,28 @@
-/* Fix overscroll issue on mobile */
-html,
-body {
-  position: fixed;
-  width: 100%;
+/* Fix background color during overscroll on mobile */
+html {
   height: 100%;
-  overflow: auto;
-  overscroll-behavior: none;
-  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
 }
 
-/* Ensure backgrounds extend fully */
 body {
+  min-height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
 }
 
-/* Make sure the root div takes full height */
-#root {
-  min-height: 100%;
-}
-
-/* Apply base background color */
+/* Apply base background colors that will show during overscroll */
 html.dark {
   background-color: rgb(15, 15, 15);
 }
 
 html:not(.dark) {
   background-color: rgb(255, 255, 255);
+}
+
+/* Make sure the root div takes full height */
+#root {
+  min-height: 100vh;
 }

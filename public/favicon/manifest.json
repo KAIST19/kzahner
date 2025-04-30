@@ -3,9 +3,9 @@
   "short_name": "Kanghyeon",
   "icons": [
     {
-      "src": "/favicon/kz_icon.png",
-      "sizes": "1024x1024",
-      "type": "image/png"
+      "src": "/favicon/kz_icon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
     }
   ],
   "theme_color": "#ffffff",

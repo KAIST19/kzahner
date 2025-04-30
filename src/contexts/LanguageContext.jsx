@@ -189,7 +189,7 @@ const translations = {
     award2Desc: "KAIST 전체 1학년 중 상위 2%의 평점",
 
     // Name explanation
-    nameExplanation: "참고: 대한민국 국적으로 법적 이름은 김강현(여권상 Kanghyeon Kim)입니다. 스위스에서는 Kanghyeon Zahner로 등록되어 있습니다."
+    nameExplanation: "참고: 저의 법적 이름은 김강현(여권상 Kanghyeon Kim)입니다. 스위스에서는 Kanghyeon Zahner로 등록되어 있습니다."
   }
 };
 

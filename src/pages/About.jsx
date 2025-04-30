@@ -178,9 +178,9 @@ const About = () => {
           <h2 className="text-2xl font-bold mb-6 text-[rgb(218,41,28)] text-center">
             {t('fullName')}
             <span
-              className="inline-block ml-2 text-sm text-gray-500 dark:text-gray-400 cursor-help relative group"
+              className="inline-block ml-1 text-sm text-gray-500 dark:text-gray-400 cursor-help relative group"
             >
-              <span className="underline decoration-dotted">About my family name</span>
+              <span className="text-lg"><sup>*</sup></span>
               <span className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity absolute left-0 transform -translate-x-1/4 mt-2 w-64 p-4 bg-white dark:bg-gray-800 rounded-md shadow-lg text-sm text-gray-700 dark:text-gray-300 z-10">
                 As a Korean citizen, my legal name is 김강현 (Kanghyeon Kim on passport). In Switzerland, I am registered as Kanghyeon Zahner.
               </span>

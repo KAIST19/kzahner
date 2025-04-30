@@ -76,7 +76,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="text-center max-w-3xl mx-auto my-24"
+          className="text-center max-w-3xl mx-auto my-24 p-8 rounded-2xl backdrop-blur-lg bg-white/30 dark:bg-black/30 border border-white/20 dark:border-gray-700/30 shadow-xl"
         >
           <h2 className="text-3xl font-bold mb-6">{t('learnAbout')} <span className="text-[rgb(218,41,28)]">{t('me')}</span></h2>
           <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
@@ -84,7 +84,7 @@ export default function Home() {
           </p>
           <motion.button
             whileHover={{ scale: 1.05 }}
-            className="bg-[rgb(218,41,28)] hover:bg-[rgb(198,31,18)] text-white px-8 py-4 rounded-lg font-medium inline-flex items-center gap-2"
+            className="bg-[rgb(218,41,28)] hover:bg-[rgb(198,31,18)] text-white px-8 py-4 rounded-lg font-medium inline-flex items-center gap-2 shadow-md"
           >
             <Link to="/about" className="flex items-center gap-2">
               {t('learnAboutMeBtn')} <FiArrowRight />

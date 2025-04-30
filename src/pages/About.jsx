@@ -220,7 +220,7 @@ const About = () => {
           </div>
 
           <div className="mt-8 pt-4 border-t border-gray-200 dark:border-gray-700">
-            <p className="text-sm text-gray-600 dark:text-gray-400 italic text-center">
+            <p className="text-sm text-gray-600 dark:text-gray-400 italic text-left">
               Note: As a Korean citizen, my legal name is 김강현 (Kanghyeon Kim on passport).
               In Switzerland, I am registered as Kanghyeon Zahner.
             </p>

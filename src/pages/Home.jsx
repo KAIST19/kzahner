@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import heroImage from '../assets/hero-image.png';
 import { FiGithub, FiLinkedin, FiMail, FiArrowRight } from 'react-icons/fi';
 import { useLanguage } from '../contexts/LanguageContext';
 
@@ -10,86 +9,102 @@ export default function Home() {
 
   return (
     <div className="bg-white dark:bg-[rgb(15,15,15)] text-gray-900 dark:text-white min-h-screen transition-colors duration-200">
-      <div className="container mx-auto px-4 py-20">
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-16">
-          {/* Text Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="lg:w-1/2"
-          >
-            <h4 className="text-[rgb(218,41,28)] font-medium mb-2">{t('aiResearcher')}</h4>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">{t('fullName')}</h1>
-            <p className="text-xl text-gray-700 dark:text-gray-300 mb-8 leading-relaxed">
-              {t('bio')}
-            </p>
-
-            <div className="flex gap-5 mb-8">
-              <motion.a
-                href="https://www.linkedin.com/in/kanghyeon-zahner-29ba44192/"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -5, color: "rgb(218,41,28)" }}
-                className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[rgb(218,41,28)] dark:hover:text-white transition-colors"
-              >
-                <FiLinkedin className="text-2xl" />
-                <span>LinkedIn</span>
-              </motion.a>
-              <motion.a
-                href="mailto:kaist19@kaist.ac.kr"
-                whileHover={{ y: -5, color: "rgb(218,41,28)" }}
-                className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[rgb(218,41,28)] dark:hover:text-white transition-colors"
-              >
-                <FiMail className="text-2xl" />
-                <span>kaist19@kaist.ac.kr</span>
-              </motion.a>
-            </div>
-          </motion.div>
-
-          {/* Hero Image or Animation */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="lg:w-1/2 flex items-center justify-center"
-          >
-            <div className="relative w-full max-w-sm">
-              {/* Decorative elements */}
-              <div className="absolute -top-10 -left-10 w-40 h-40 bg-[rgba(218,41,28,0.1)] rounded-full filter blur-3xl"></div>
-              <div className="absolute -bottom-20 -right-10 w-60 h-60 bg-[rgba(218,41,28,0.15)] rounded-full filter blur-3xl"></div>
-
-              {/* Profile Image with Border */}
-              <div className="relative z-10 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 p-3 rounded-2xl border border-gray-300 dark:border-gray-700">
-                <img
-                  src="/img/kanghyeon_at_museum.png"
-                  alt="Kanghyeon at Museum"
-                  className="w-full h-auto max-h-[350px] object-cover object-center rounded-xl"
-                />
-              </div>
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Learn About Me Section */}
+      <div className="container mx-auto px-4 py-12 md:py-20">
+        {/* Main content card that integrates all elements */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="text-center max-w-3xl mx-auto my-24 p-8 rounded-2xl backdrop-blur-lg bg-white/30 dark:bg-black/30 border border-white/20 dark:border-gray-700/30 shadow-xl"
+          transition={{ duration: 0.6 }}
+          className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-[rgb(20,20,20)] border border-gray-200 dark:border-gray-800 shadow-2xl"
         >
-          <h2 className="text-3xl font-bold mb-6">{t('learnAbout')} <span className="text-[rgb(218,41,28)]">{t('me')}</span></h2>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
-            {t('discoverMore')}
-          </p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            className="bg-[rgb(218,41,28)] hover:bg-[rgb(198,31,18)] text-white px-8 py-4 rounded-lg font-medium inline-flex items-center gap-2 shadow-md"
-          >
-            <Link to="/about" className="flex items-center gap-2">
-              {t('learnAboutMeBtn')} <FiArrowRight />
-            </Link>
-          </motion.button>
+          {/* Decorative elements */}
+          <div className="absolute -top-20 -left-20 w-60 h-60 bg-[rgba(218,41,28,0.08)] rounded-full filter blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-80 h-80 bg-[rgba(218,41,28,0.12)] rounded-full filter blur-3xl"></div>
+
+          <div className="flex flex-col lg:flex-row">
+            {/* Left side - Profile image in a creative frame */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="lg:w-2/5 relative overflow-hidden"
+            >
+              <div className="h-full relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-[rgba(218,41,28,0.1)] to-transparent z-0"></div>
+                <img
+                  src="/img/kanghyeon_at_museum.png"
+                  alt="Kanghyeon at Museum"
+                  className="w-full h-full object-cover object-center lg:h-full lg:max-h-[600px]"
+                />
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+
+                {/* Name overlay on mobile */}
+                <div className="absolute bottom-6 left-6 lg:hidden">
+                  <h1 className="text-4xl font-bold text-white drop-shadow-lg">{t('fullName')}</h1>
+                  <h4 className="text-[rgb(218,41,28)] font-medium mt-1 drop-shadow-md">{t('aiResearcher')}</h4>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Right side - Text content and CTA integrated */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="lg:w-3/5 p-6 md:p-10 lg:p-12 flex flex-col"
+            >
+              {/* Header - Hidden on mobile, shown on desktop */}
+              <div className="hidden lg:block mb-6">
+                <h4 className="text-[rgb(218,41,28)] font-medium mb-2">{t('aiResearcher')}</h4>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">{t('fullName')}</h1>
+              </div>
+
+              {/* Bio */}
+              <div className="mb-8 mt-4 lg:mt-0">
+                <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+                  {t('bio')}
+                </p>
+              </div>
+
+              {/* Social links */}
+              <div className="flex flex-wrap gap-4 md:gap-5 mb-8">
+                <motion.a
+                  href="https://www.linkedin.com/in/kanghyeon-zahner-29ba44192/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ y: -3, color: "rgb(218,41,28)" }}
+                  className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[rgb(218,41,28)] dark:hover:text-white transition-colors"
+                >
+                  <FiLinkedin className="text-2xl" />
+                  <span>LinkedIn</span>
+                </motion.a>
+                <motion.a
+                  href="mailto:kaist19@kaist.ac.kr"
+                  whileHover={{ y: -3, color: "rgb(218,41,28)" }}
+                  className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[rgb(218,41,28)] dark:hover:text-white transition-colors"
+                >
+                  <FiMail className="text-2xl" />
+                  <span>kaist19@kaist.ac.kr</span>
+                </motion.a>
+              </div>
+
+              {/* Learn About Me section - Integrated instead of separate */}
+              <div className="mt-auto pt-4 border-t border-gray-200 dark:border-gray-800">
+                <h3 className="text-2xl font-bold mb-4">{t('learnAbout')} <span className="text-[rgb(218,41,28)]">{t('me')}</span></h3>
+                <p className="text-gray-700 dark:text-gray-300 mb-6">
+                  {t('discoverMore')}
+                </p>
+                <motion.button
+                  whileHover={{ scale: 1.03 }}
+                  className="bg-[rgb(218,41,28)] hover:bg-[rgb(198,31,18)] text-white px-6 py-3 rounded-lg font-medium inline-flex items-center gap-2 shadow-md"
+                >
+                  <Link to="/about" className="flex items-center gap-2">
+                    {t('learnAboutMeBtn')} <FiArrowRight />
+                  </Link>
+                </motion.button>
+              </div>
+            </motion.div>
+          </div>
         </motion.div>
       </div>
     </div>

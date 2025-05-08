@@ -8,7 +8,7 @@ const translations = {
   en: {
     // Home page
     aiResearcher: "Artificial Intelligence & Mathematics",
-    bio: "I hold a B.S. in Computer Science, where I conducted research on the training & text generation of large language models. Now based in Switzerland.",
+    bio: "Incoming student at Institut Polytechnique de Paris (M1 Data & AI) / Based in Switzerland / B.S. in Computer Science from KAIST",
     learnAbout: "Learn About",
     me: "Me",
     discoverMore: "Discover more about my background, research interests, and projects.",
@@ -70,7 +70,7 @@ const translations = {
   de: {
     // Home page
     aiResearcher: "Künstliche Intelligenz & Mathematik",
-    bio: "Ich habe einen B.S. in Informatik, in dem ich Forschung zum Training und zur Textgenerierung großer Sprachmodelle betrieben habe. Derzeit lebe ich in der Schweiz.",
+    bio: "Kommender Student am Institut Polytechnique de Paris (M1 Data & AI) / wohnhaft in der Schweiz / B.S. in Informatik von der KAIST",
     learnAbout: "Mehr über",
     me: "mich",
     discoverMore: "Erfahren Sie mehr über meinen Hintergrund, Forschungsinteressen und Projekte.",
@@ -132,7 +132,7 @@ const translations = {
   ko: {
     // Home page
     aiResearcher: "인공지능, 수학",
-    bio: "2025년에 전산학 학사 학위를 받았으며, 대형 언어 모델(LLM)의 학습 및 텍스트 생성에 관한 연구를 수행했습니다. 현재 스위스에 거주 중입니다.",
+    bio: "Institut Polytechnique de Paris (M1 Data & AI) 진학 예정 / 스위스 거주 / KAIST 전산학 학사",
     learnAbout: "더",
     me: "알아보기",
     discoverMore: "제 배경, 연구 관심사 및 프로젝트에 대해 자세히 알아보세요.",
@@ -165,8 +165,8 @@ const translations = {
     undergradResearcher: "학부 연구원",
     sergeant: "병장",
     koreanNative: "한국어: 모국어",
-    englishLevel: "영어: 전문가 수준 (IELTS: 8.0/9.0)",
-    otherLanguages: "독일어 & 프랑스어: 기초 수준",
+    englishLevel: "영어: 고급 (IELTS: 8.0/9.0)",
+    otherLanguages: "독일어 & 프랑스어: 초보",
     communicationSkills: "리더십, 그룹 프로젝트, 프레젠테이션, 회의 및 기술 문서 작성",
     aiSkills: "딥 러닝, 컴퓨터 비전, 자연어 처리, 모델 최적화",
 

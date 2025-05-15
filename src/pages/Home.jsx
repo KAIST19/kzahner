@@ -27,14 +27,14 @@ export default function Home() {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="lg:w-2/5 relative overflow-hidden"
+              className="lg:w-2/5 relative overflow-hidden lg:self-stretch lg:flex"
             >
-              <div className="h-full relative">
+              <div className="h-full relative flex-grow">
                 <div className="absolute inset-0 bg-gradient-to-br from-[rgba(218,41,28,0.1)] to-transparent z-0"></div>
                 <img
                   src="/img/kanghyeon_at_museum.png"
                   alt="Kanghyeon at Museum"
-                  className="w-full h-full object-cover object-center lg:h-full lg:max-h-[600px]"
+                  className="w-full h-full object-cover object-center sticky top-0"
                 />
                 <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
 
@@ -102,6 +102,29 @@ export default function Home() {
                     {t('learnAboutMeBtn')} <FiArrowRight />
                   </Link>
                 </motion.button>
+              </div>
+
+              {/* Recommendation */}
+              <div className="mt-8 pt-4 border-t border-gray-200 dark:border-gray-800">
+                <h3 className="text-2xl font-bold mb-4">Recommendations</h3>
+                <blockquote className="text-gray-700 dark:text-gray-300 mb-6">
+                  "Kanghyeon worked with me as an undergraduate researcher for about a year and a half. From the start, he showed exceptional curiosity and independence, leading projects on language models and even exploring the ethical dimensions of AI. He always came prepared, thought deeply, and communicated clearly. It was a real pleasure to mentor him, and I'm confident he'll continue to grow as a thoughtful and capable researcher."
+                </blockquote>
+                <div className="text-gray-600 dark:text-gray-400">
+                  <span>— Jiseon Kim, Ph.D. Candidate at KAIST (May 2025)</span>
+                </div>
+                <div className="mt-4">
+                  <motion.a
+                    href="https://www.linkedin.com/in/kanghyeon-zahner-29ba44192/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.03, color: "rgb(218,41,28)" }}
+                    className="text-sm text-gray-600 dark:text-gray-400 hover:text-[rgb(218,41,28)] dark:hover:text-[rgb(218,41,28)] flex items-center gap-1 transition-colors"
+                  >
+                    <FiLinkedin className="text-lg" />
+                    <span>View original recommendation</span>
+                  </motion.a>
+                </div>
               </div>
             </motion.div>
           </div>

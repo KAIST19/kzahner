@@ -106,7 +106,7 @@ export default function Home() {
 
               {/* Recommendation */}
               <div className="mt-8 pt-4 border-t border-gray-200 dark:border-gray-800">
-                <h3 className="text-2xl font-bold mb-4">Recommendations</h3>
+                <h3 className="text-2xl font-bold mb-4">{t('recommendation')}</h3>
                 <blockquote className="text-gray-700 dark:text-gray-300 mb-6">
                   "Kanghyeon worked with me as an undergraduate researcher for about a year and a half. From the start, he showed exceptional curiosity and independence, leading projects on language models and even exploring the ethical dimensions of AI. He always came prepared, thought deeply, and communicated clearly. It was a real pleasure to mentor him, and I'm confident he'll continue to grow as a thoughtful and capable researcher."
                 </blockquote>

@@ -13,6 +13,7 @@ const translations = {
     me: "Me",
     discoverMore: "Discover more about my background, research interests, and projects.",
     learnAboutMeBtn: "Learn About Me",
+    recommendation: "Recommendation",
 
     // About page
     aboutMe: "About Me",
@@ -75,6 +76,7 @@ const translations = {
     me: "mich",
     discoverMore: "Erfahren Sie mehr über meinen Hintergrund, Forschungsinteressen und Projekte.",
     learnAboutMeBtn: "Mehr über mich",
+    recommendation: "Empfehlung",
 
     // About page
     aboutMe: "Über Mich",
@@ -137,6 +139,7 @@ const translations = {
     me: "알아보기",
     discoverMore: "제 배경, 연구 관심사 및 프로젝트에 대해 자세히 알아보세요.",
     learnAboutMeBtn: "About",
+    recommendation: "추천",
 
     // About page
     aboutMe: "소개",

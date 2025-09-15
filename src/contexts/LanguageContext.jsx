@@ -8,7 +8,7 @@ const translations = {
   en: {
     // Home page
     aiResearcher: 'Artificial Intelligence & Mathematics',
-    bio: 'Incoming student at Institut Polytechnique de Paris (M1 Data & AI) / Based in Switzerland / B.S. in Computer Science from KAIST',
+    bio: 'Master’s student at Institut Polytechnique de Paris (Data & AI) / Based in Switzerland / B.S. in Computer Science from KAIST',
     learnAbout: 'Learn About',
     me: 'Me',
     discoverMore:
@@ -84,7 +84,7 @@ const translations = {
   de: {
     // Home page
     aiResearcher: 'Künstliche Intelligenz & Mathematik',
-    bio: 'Kommender Student am Institut Polytechnique de Paris (M1 Data & AI) / wohnhaft in der Schweiz / B.S. in Informatik von der KAIST',
+    bio: 'Masterstudent am Institut Polytechnique de Paris (M1 Data & AI) / wohnhaft in der Schweiz / B.S. in Informatik von der KAIST',
     learnAbout: 'Mehr über',
     me: 'mich',
     discoverMore:
@@ -161,7 +161,7 @@ const translations = {
   ko: {
     // Home page
     aiResearcher: '인공지능, 수학',
-    bio: 'Institut Polytechnique de Paris (M1 Data & AI) 진학 예정 / 스위스 거주 / KAIST 전산학 학사',
+    bio: 'Institut Polytechnique de Paris (M1 Data & AI) 석사과정 재학 / 스위스 거주 / KAIST 전산학 학사',
     learnAbout: '더',
     me: '알아보기',
     discoverMore: '제 배경, 연구 관심사 및 프로젝트에 대해 자세히 알아보세요.',
